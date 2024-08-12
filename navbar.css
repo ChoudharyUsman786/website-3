@@ -1,0 +1,224 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/* start navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  box-shadow: 0 3px 4px 1px rgba(168, 168, 168, 0.316);
+  position: sticky;
+  top: 0;
+  padding: 10px 20px;
+}
+.navbar ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  gap: 20px;
+  font-family: sans-serif;
+}
+.navbar ul a {
+  list-style-type: none;
+  color: white;
+  text-decoration: none;
+  margin: 10px 10px;
+}
+.navbar ul a:hover {
+  background-color: rgba(236, 225, 225, 0.911);
+  color: black;
+  padding: 15px 20px;
+}
+.section1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-image: cover;
+}
+.hero {
+  text-align: center;
+  color: white;
+  background-image: url(/img/la.jpg);
+  height: 600px;
+  width: 100%;
+  align-content: flex-end;
+}
+/* start band */
+
+.band {
+  padding: 50px 100px;
+}
+
+.band h2 {
+  margin-top: 50px;
+  text-align: center;
+  letter-spacing: 3px;
+  margin: 20px;
+  font-weight: 600;
+  font-size: 30px;
+}
+.band p {
+  text-align: center;
+  text-align: justify;
+  margin: 2px 90px;
+  line-height: 1.5;
+}
+.name-cards {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+}
+.pic {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 120px;
+}
+
+/* TOUR DATES */
+
+.tour {
+  background-color: black;
+  padding: 50px 100px;
+}
+.tour-cards {
+  display: flex;
+  gap: 20px;
+}
+.tour-cards .card {
+  background-color: #ffff;
+}
+.tour-cards .card img {
+  width: 100%;
+}
+.tour-cards .card .card-content {
+  padding: 10px;
+}
+.tour-cards .card .card-content h5 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.tour-cards .card .card-content .date {
+  color: gray;
+  margin-bottom: 20px;
+}
+.tour .tour-cards .card-content .button {
+  background-color: black;
+  color: white;
+  margin: 0px 0px 16px;
+  padding: 8px 16px;
+}
+.tour .tour-cards .card-content .button:hover {
+  background-color: rgb(177, 172, 172);
+}
+
+/* contact form */
+.contact {
+  padding: 50px 150px;
+}
+.contact .form-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact .form-container .form .w-50 {
+  width: 40%;
+}
+.contact .form-container .form .w-100 {
+  width: 87.5%;
+  margin-top: 10px;
+}
+
+.contact h2 {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  letter-spacing: 3px;
+}
+.contact p {
+  text-align: center;
+  margin-bottom: 40px;
+  color: gray;
+}
+.section3 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 350px;
+  margin-bottom: 150px;
+  padding: 5px 60px;
+}
+.phone {
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+  font-style: bold;
+}
+
+.phone h4 {
+  margin-bottom: 10px;
+}
+
+.contact .form input {
+  padding: 10px 20px;
+}
+
+.contact .form-container .send {
+  padding: 12px 25px;
+  background-color: black;
+  color: white;
+  float: right;
+  margin-right: 35px;
+  margin-top: 10px;
+}
+.map img {
+  width: 100%;
+}
+/* footer */
+
+.footer {
+  padding: 30px;
+  text-align: center;
+}
+
+.footer a:hover {
+  color: black;
+}
+@media (max-width: 934px) {
+  .name-cards {
+    flex-direction: column;
+  }
+}
+@media (max-width: 934px) {
+  .card img {
+    width: 100%;
+  }
+}
+@media (max-width: 470px) {
+  .navbar ul {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 726px) {
+  .tour-cards {
+    flex-direction: column;
+  }
+  .tour {
+    padding: 50px 10px;
+  }
+}
+@media (max-width: 500px) {
+  .band {
+    padding: 50px 50px;
+  }
+  .band p {
+    text-align: justify;
+  }
+}
+@media (max-width: 450px) {
+  .contact .form-container .form .w-100 {
+    width: 40%;
+  }
+}
